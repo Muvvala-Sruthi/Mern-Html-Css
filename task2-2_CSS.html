@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            display:flex;
+        flex-direction: row;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left:-30px;             
+        }
+       .con{
+        width:fit-content;       
+        border:1px solid black;
+       }          
+        .a
+        {          
+            background-color:gray;
+            width:75px;
+            height:auto;           
+            /* margin:0px; 
+            padding:0;       
+            justify-content: left;     */
+        }
+        li.a a{
+            display:flex;
+        flex-direction: row;                    
+            color:white;
+            text-decoration: none;
+            padding:12px;
+        }
+        .b,.c,.d
+        {
+            background-color:darkgrey;
+            width:75px;
+            height:auto;           
+        }
+        li.b a,li.c a,li.d a{
+            display:flex;
+        flex-direction: row;                                            
+            color:blue;
+            text-decoration: none;
+            padding:12px;           
+        }  
+        label{
+            color:blue;
+        }  
+        .seperator{
+            height:42px;
+            width:1px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <ul>
+            <li class="a"><a href="#home">Home</a></li>
+            <li class="seperator"></li>
+            <li class="b"><a href="#java">Java</a></li>
+            <li class="seperator"></li>
+            <li class="c"><a href="#html">HTML</a></li>
+            <li class="seperator"></li>
+            <li class="d"><a href="#css">CSS</a></li>
+                <li class="seperator"></li>
+                <li class="d"><a href="#css">        </a></li>
+           
+        </ul>
+    </div>
+</body>
+</html>

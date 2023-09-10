@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #outer{
+            width:1000px;
+            height:500px;
+            background-color:darkmagenta;
+            margin:50px auto;           
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color:white;            
+        }
+        #inner{
+            background-color: magenta;
+            width:700px;
+            height:450px;                        
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);            
+        }
+        label{           
+            width:150px;
+            display:inline-block;            
+            margin-left:180px; 
+            margin-right: auto;
+            margin-top: 20px;           
+        }
+        #a,#b,#c,#d,#e{           
+            margin-left:30px;   
+            height:20px;
+            width:180px;
+        }
+       select{         
+            margin-left:30px;
+            width:120px;
+            height:20px;
+        }       
+textarea{
+    margin-left: 30px;
+    margin-top: 10px;
+    color:grey;
+}
+#sub{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width:390px;
+    height:40px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+}
+input,textarea,select{
+    border:none;
+} 
+#m{
+    margin-left: 30px;
+}    
+    </style>
+</head>
+<body>
+    <div id="outer">
+        <div id="inner">
+            <label>Name:</label><input type="text" id="a" placeholder="your name"><br>
+            <label>Emaill:</label><input type="email" id="b" placeholder="your email"><br>
+            <label>Password:</label><input type="password" id="c"><br>
+            <label>Phone Number:</label><input type="text" id="d"><br>
+            <label>Gender:</label>
+            <span id="m">Male: </span><input type="radio" name="gen" id="male"><span>Female: </span><input type="radio" name="gen" id="female"><span>Other: </span><input type="radio" name="gen" id="oth"><br>
+           <label for="lan">language:</label>
+            <select id="lan">
+            <option>Select language</option>
+            <option>Telugu</option>
+            <option>Hindi</option>
+            <option>English</option>
+        </select><br>
+        <label>Zip Code:</label><input type="text" id="e"><br>
+        <label>About:</label><textarea cols="22" rows="2">Write about yourself...</textarea><br>
+        <input type="submit" value="Register" id="sub">
+        </div>
+    </div>
+</body>
+</html>
